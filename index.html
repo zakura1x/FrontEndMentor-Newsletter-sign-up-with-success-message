@@ -2,38 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="/css/output.css">
+  <title>Newsletter sign-up form with success message | Zakura1x</title>
 </head>
-<body>
+<body class="bg-white flex md:justify-center md:items-center md:min-h-screen font-sans md:shadow-xl md:shadow-gray-600 md:bg-darkSlateGrey" >
 
-  <!-- Sign-up form start -->
+  <!-- Hero Section -->
+  <section id="Hero">
+    <!-- Flex Container -->
+    <div class="container flex flex-col-reverse bg-white justify-center rounded-3xl md:flex-row md:h-auto">
+      <!-- SignUp Form -->
+      <div class="flex flex-col my-12 px-6 space-y-6 md:justify-center md:pl-12">
+        <!-- Heading -->
+        <h2 class="font-bold text-4xl text-darkSlateGrey md:text-5xl">Stay updated!</h2>
+        <p class="max-w-sm text-base text-darkSlateGrey">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Stay updated!
+        <!-- Updates -->
+        <div class="space-y-3">
+          <!-- Update 1 -->
+          <div class="flex flex-row space-x-3 items-center">
+            <img src="assets/images/icon-list.svg" alt="" class="w-7 h-7">
+            <p class="max-w-sm text-sm text-darkSlateGrey">Product discovery and building what matters</p>
+          </div>
+          <!-- Update 2 -->
+          <div class="flex flex-row space-x-3 items-center">
+            <img src="assets/images/icon-list.svg" alt="" class="w-7 h-7">
+            <p class="max-w-sm text-sm text-darkSlateGrey">Measuring to ensure updates are a success</p>
+          </div>
+          <!-- Update 3 -->
+          <div class="flex flex-row space-x-3 items-center">
+            <img src="assets/images/icon-list.svg" alt="" class="w-7 h-7">
+            <p class="max-w-sm text-sm text-darkSlate Grey">And much more!</p>
+          </div>
+        </div>
 
-  Join 60,000+ product managers receiving monthly updates on:
+        <!-- Form -->
+        <div class="space-y-2">
+          <p class="w-full text-sm text-darkSlateGrey font-bold">Email address</p>
+          <form>
+            <input type="email" placeholder="email@company.com" class="w-full rounded-md border border-CharcoalGrey p-3 pl-5">
+          </form>
+        </div>
+        <button class="w-full rounded-md bg-darkSlateGrey font-bold text-sm text-center text-white p-3 hover:bg-tomato"> Subscribe to monthly newsletter</button>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+      </div>
 
-  Email address
-  email@company.com
+      <!-- Image Section -->
+      <div class="w-full md:hidden">
+        <img src="/assets/images/illustration-sign-up-mobile.svg" alt="">
+      </div>
+      <div class="hidden m-5 md:flex">
+        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+    </div>
+  </section>
 
-  Subscribe to monthly newsletter
 
-  <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+
+  <!-- Sign-up form start
 
   Thanks for subscribing!
 
@@ -44,9 +75,5 @@
 
   <!-- Success message end -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
